@@ -3403,12 +3403,9 @@ li.categoryBar-list-item:nth-child(1)>span::after {
   content: 'Hexo教程' !important;
 }
 li.categoryBar-list-item:nth-child(2)>span::after {
-  content: '网盘资源分享' !important;
-}
-li.categoryBar-list-item:nth-child(3)>span::after {
   content: 'Pixiv收藏' !important;
 }
-li.categoryBar-list-item:nth-child(4)>span::after {
+li.categoryBar-list-item:nth-child(3)>span::after {
   content: 'Hi Res高解析音乐分享' !important;
 }
 li.categoryBar-list-item {
