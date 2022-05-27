@@ -1,0 +1,631 @@
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+    background:rgba(255, 255, 255, 0.9);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+  background:rgba(255, 255, 255, 0.9)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 分页页面 */
+div#page{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 归档页面 */
+div#archive{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 标签页面 */
+div#tag{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 分类页面 */
+div#category{
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
+#footer{
+  opacity: 0.5;
+}
+
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+
+
+/* 全局默认鼠标指针 */
+body,
+html{
+  cursor: url('/chuyin5/miku2/Aero_arrow.cur'),auto !important;
+}
+/* 悬停图片时的鼠标指针 */
+img{
+  cursor: url('/chuyin5/miku2/Aero_Prec.cur'),auto !important;
+}
+/* 选择链接标签时的鼠标指针 */
+a:hover{
+    cursor: url('/chuyin5/miku2/Aero_Prec.cur'),auto;
+}
+/* 选中输入框时的鼠标指针 */
+input:hover{
+    cursor: url('/chuyin5/miku2/Aero_select.cur'),auto;
+}
+/* 悬停按钮时的鼠标指针 */
+button:hover{
+    cursor: url('/chuyin5/miku2/Aero_Prec.cur'),auto;
+}
+/* 悬停列表标签时的鼠标指针 */
+i:hover{
+    cursor: url('/chuyin5/miku2/Aero_Working.cur'),auto;
+}
+/* 悬停页脚链接标签（例如页脚徽标）时的鼠标指针 */
+#footer-wrap a:hover{
+      cursor: url('/chuyin5/miku2/Aero_Prec.cur'),auto;
+}
+/* 悬停页码时的鼠标指针 */
+#pagination .page-number:hover{
+      cursor: url('/chuyin5/miku2/Aero_Prec.cur'),auto;
+}
+/* 悬停菜单栏时的鼠标指针 */
+#nav .site-page:hover{
+      cursor: url('/chuyin5/miku2/Aero_Prec.cur'),auto;
+}
+
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+
+svg.icon {
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   font-size: 20px;
+    /* 控制图标大小*/
+}
+
+
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.5)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+      }
+
+[data-theme="dark"]
+  .read-mode div#post{
+      background: rgba(0, 0, 0, 0.5)!important;
+      color: #ffffff;
+      }
+
+      .read-mode #aside-content .card-widget{
+            background: rgba(158, 204, 171, 0.5)!important;
+          }
+      .read-mode div#post{
+          background: rgba(158, 204, 171, 0.5)!important;
+          }
+
+          /* 首页文章卡片 */
+          [data-theme=dark] #recent-posts > .recent-post-item{
+            background:rgba(0,0,0,0.5);
+          }
+          /* 首页侧栏卡片 */
+          [data-theme=dark] .card-widget{
+          background:rgba(0,0,0,0.5)!important;
+          }
+          /* 文章页面正文背景 */
+          [data-theme=dark] div#post{
+          background: rgba(0,0,0,0.5);
+          }
+          /* 分页页面 */
+          [data-theme=dark] div#page{
+          background: rgba(0,0,0,0.5);
+          }
+          /* 归档页面 */
+          [data-theme=dark] div#archive{
+          background: rgba(0,0,0,0.5);
+          }
+          /* 标签页面 */
+          [data-theme=dark] div#tag{
+          background: rgba(0,0,0,0.5);
+          }
+          /* 分类页面 */
+          [data-theme=dark] div#category{
+          background: rgba(0,0,0,0.5);
+          }
+ 
+
+@font-face{
+  font-family:'zuziaaa' ;  /* 字体名自定义即可 */
+  src:url('https://cdn.jsdelivr.net/gh/Iori-yimaga/static_files@main/font.woff2'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+h1#site-title {
+  font-family: 'zuziaaa', sans-serif;
+}
+
+
+/*iconfont默认样式*/
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  }
+/* 页脚蝴蝶振翅动画 */
+.copyright svg{
+  animation:butterfly 1s linear infinite alternate;
+}
+@keyframes butterfly {
+  from {
+    transform:rotateY(70deg);
+  }
+  to {
+    transform:rotateY(0deg);
+  }
+}
+
+
+/*相册页面定位修复*/
+.justified-gallery > div > img,
+.justified-gallery > figure > img,
+.justified-gallery > a > a > img,
+.justified-gallery > div > a > img,
+.justified-gallery > figure > a > img,
+.justified-gallery > a > svg,
+.justified-gallery > div > svg,
+.justified-gallery > figure > svg,
+.justified-gallery > a > a > svg,
+.justified-gallery > div > a > svg,
+.justified-gallery > figure > a > svg{
+  position: static !important;
+}
+
+
+/*侧栏按钮缩进*/
+#fixedElement{
+  position: fixed;
+  width: 60px
+  /* 假定宽度是60px */
+  bottom: 60px;
+  /* 定义元素下边框与浏览器下边框的距离 */
+  left: -30px;
+  /* 定义元素左边框与浏览器左边框的距离 */
+  /* 此时效果上此按钮应当缩进侧栏一半 */
+}
+
+
+/*夜间模式下的阅读模式*/
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]  
+  .read-mode div#post{
+      background: rgba(0, 0, 0, 0.5)!important;
+      color: #ffffff;
+      }
+
+
+.read-mode #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.0)!important;
+    }
+.read-mode div#post{
+    background: rgba(0, 0, 0, 0.0)!important;
+    }
+
+
+
+/* 版权链接去掉下划线 */
+
+.layout_post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+}
+
+
+/* 目录隐藏按钮颜色 */
+
+#toggle-sidebar {
+    color: #e58a8a !important;
+}
+
+
+/* 博主昵称颜色 */
+.author-info__name {
+    color: #ff7242;
+}
+
+
+
+/* 提交按钮 */
+
+#vcomment button {
+    padding: 0.3rem 0.8rem;
+    border-color: #fff;
+    background-color: #e58a8a;
+    color: #fff;
+    font-size: 0.7rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* 评论区代码块 */
+
+.v[data-class=v] code {
+    color: #c7254e;
+    background-color: #F9F2F4;
+}
+/* 设置评论框 */
+
+.vcard {
+    box-shadow: 2px 2px 5px #bbb;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+
+/* 取消回复聊天框 */
+
+.vquote .vcard {
+    box-shadow: 2px 2px 5px transparent;
+    background: rgba(255, 255, 255, 0.0);
+    padding: 0px;
+}
+
+
+
+/* 首页中间打字效果上方 */
+#page-header #site_title {
+    color: #80bdab;
+}
+/* 顶部导航栏 */
+#nav a {
+    color: #f9f2f4;
+}
+
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+.history_slide {
+  text-align:left;
+  font-size: 14px;
+  background: var(--card-bg);
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+.history_slide_time{
+  color: #858585;
+  Font-style: italic;
+  font-weight: lighter;
+}
+/*手机端影藏区块*/
+@media screen and (max-width: 800px) {
+    #aside_content {
+        display: none;
+        font-size: 13px;
+    }
+}
+.wv-lt-refresh {
+    display: none;
+}
+/*菜单圆角*/
+#nav .menus_items .menus_item .menus_item_child li:hover {
+    border-radius: 10px;
+}
+/*作则按钮间隔调整*/
+#rightside>div>a, #rightside>div>button {
+    margin-bottom: 8px;
+}
+/*twikoo页脚影藏*/
+.tk-footer {
+    display: none;
+}
+/*pwa更新提示影藏*/
+#app-refresh  {
+    display: none;
+}
+/*版权优化*/
+#post .post-copyright {
+    background: #ffffff;
+    padding: .9rem 1.4rem;
+    overflow: hidden;
+    position: relative;
+    padding: .5rem .8rem;
+    background-color: rgb(239 241 243);
+    border-radius: 12px!important;
+}
+#article-container img {
+    border-radius: 12px;
+    margin: 0 auto 1.5rem;
+}
+.article-sort-item-img {
+    border-radius: 12px;
+}
+/*最新文章cover圆角*/
+img.entered.loaded {
+    border-radius: 15px;
+}
+
+
+}
+/*个人信息按钮圆角*/
+.button--animated {
+    padding: 0.51em 0.51em;
+    text-decoration: none;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    position: relative;
+    transition: transform .2s ease;
+    font-weight: bold;
+    letter-spacing: .01em;
+    will-change: transform;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    border-radius: 13px;
+}
+/*个人信息按钮圆角溢出*/
+#aside-content .card-info #card-info-btn {
+    border-radius: -1px;
+    overflow: hidden;
+}
+/*twikoo头像圆角*/
+.tk-avatar-img {
+    border-radius: 12px;
+}
+/*时间轴图片圆角*/
+.list-h {
+    border-radius: 12px;
+}
+/*个人信息按钮圆角*/
+.post-reward .reward-button {
+    border-radius: 12px;
+}
+/*左侧按钮圆角*/
+#rightside>div>a, #rightside>div>button {
+    border-radius: 12px;
+}
+/*搜索页圆角*/
+#local-search .search-dialog {
+    border-radius: 12px;
+}
+/*twikoo站点名称标红*/
+.tk-main .tk-nick.tk-nick-link {
+    color: #ff786e !important;
+}
+
+
+/* 时间线 */
+.timeline ul li::before {
+  position: absolute;
+  top: 0.5rem;
+  left: 0rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  background: var(--card-bg);
+  content: "";
+  background-image: url(/img/favicon.jpg);
+  background-size: 2rem;
+}
+
+/* 加载更多 */
+.load-btn.button-load{
+  background: var(--heo-card-btn-bg);
+  color: var(--heo-fontcolor);
+  padding: 12px 12px;
+  margin: 8px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.load-btn.button-load:hover{
+  background: var(#fe5f55);
+  color: var(--heo-white);
+  transition: 0.3s;
+  box-shadow: var(--heo-shadow-blue);
+}
+
+/* 翻页 */
+#pagination a.extend,
+#pagination .page-number,
+#pagination span {
+	color: var(--font-color);
+	background-color: var(--card-bg);
+	border-radius: 8px;
+	height: 1.6rem;
+	text-align: center;
+	line-height: 1.6rem;
+	display: inline-block;
+	min-width: 1.6rem;
+}
+
+#pagination a.page-number:hover,
+#pagination a.extend:hover {
+	color: var(--second);
+	background-color: var(--main);
+	box-shadow: var(--main-shadow);
+}
+
+.pagination span.space {
+	font-weight: 700;
+	background-color: transparent !important;
+}
+
+#pagination a.extend.prev {
+	float: left;
+	padding: 0 10px 0 6px;
+}
+
+#pagination a.extend.next {
+	float: right;
+	padding: 0 6px 0 10px;
+}
+
+
+#pagination img.prev-cover,
+#pagination img.next-cover {
+	background-color: var(--card-bg);
+}
+
+#pagination .prev-post:hover img.prev-cover,
+#pagination .next-post:hover img.next-cover {
+	opacity: .7;
+}
+
+#pagination.pagination-post {
+	border-radius: 8px
+}
+/* 提示框 */
+.snackbar-container {
+	border-radius: 8px !important;
+}
+
+
+.relatedPosts>.relatedPosts-list .content .title {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.relatedPosts>.relatedPosts-list .cover {
+	background-color: var(--card-bg);
+}
+
+.relatedPosts>.relatedPosts-list>div:hover .cover {
+	opacity: .7;
+}
+
+@media screen and (min-width:769px) {
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(1) {
+		border-radius: 8px 0 0 0
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(3) {
+		border-radius: 0 8px 0 0
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(4) {
+		border-radius: 0 0 0 8px
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(6) {
+		border-radius: 0 0 8px 0
+	}
+}
+
+@media (max-width:768px) and (min-width:601px) {
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(1) {
+		border-radius: 8px 0 0 0
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(2) {
+		border-radius: 0 8px 0 0
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(5) {
+		border-radius: 0 0 0 8px
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(6) {
+		border-radius: 0 0 8px 0
+	}
+}
+
+@media (max-width:600px) {
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(1) {
+		border-radius: 8px 8px 0 0
+	}
+
+	#post>div.relatedPosts>div.relatedPosts-list>div:nth-child(6) {
+		border-radius: 0 0 8px 8px
+	}
+}
+
+
