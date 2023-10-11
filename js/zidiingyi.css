@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+  <meta charset="UTF-8" /> 
+  <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" id='font-awesome-css' href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css' media='all'>
+</head>
+<div id="music" key="65256b6ac1b05" api="https://music.xfyun.club"></div><script id="xplayer" src="https://music.xfyun.club/Static/player9/js/player.js" ></script>
+</body>
