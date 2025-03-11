@@ -16,7 +16,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Karune">
   <meta name="keywords" content="">
   
     <meta name="description" content="专辑概述Luv(sic) Hexalogy 是日本传奇音乐制作人 Nujabes（瀬葉淳）与日裔美籍说唱歌手 Shing02 耗时十余年（2000-2013）共同创作的六部曲概念专辑。其标题“Hexalogy”（六联剧）暗示希腊悲剧式的叙事结构，而“Luv(sic)”则是对“Love Sick”的谐音重构，既指向情感的病态纠缠，又暗藏“LOVE”与“SIC”（拉丁语“如此”）的哲学辩证。专辑以爵士">
@@ -28,12 +28,14 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://karune-shi-e.github.io/img/cover.jpg">
 <meta property="article:published_time" content="2025-03-10T15:39:00.000Z">
-<meta property="article:modified_time" content="2025-03-11T08:19:01.816Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2025-03-11T07:34:00.113Z">
+<meta property="article:author" content="Karune">
 <meta property="article:tag" content="专辑推荐">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://karune-shi-e.github.io/img/cover.jpg">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>Luv(sic) Hexalogy：以音乐编织的生命六重奏 - Karune</title>
@@ -267,6 +269,15 @@
 
     
     
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+
+      
+    
   </div>
 
 
@@ -299,6 +310,16 @@
           <article class="post-content mx-auto">
             <h1 id="seo-header">Luv(sic) Hexalogy：以音乐编织的生命六重奏</h1>
             
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    本文最后更新于 2025-03-11T15:34:00+08:00
+                  
+                  
+
+                
+              </p>
+            
             
               <div class="markdown-body">
                 
@@ -317,17 +338,33 @@
     你的浏览器不支持音频播放。
   </audio>
 </div>
-<style>
-.audio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
 
-<p>.custom-audio {<br>  width: 100%;<br>  max-width: 600px;<br>  border-radius: 8px;<br>  border: 2px solid var(–border-color, #ccc);<br>  background-color: var(–body-bg-color, #f9f9f9);<br>  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);<br>}</p>
-<p>.custom-audio::-webkit-media-controls-panel {<br>  background-color: var(–body-bg-color, #fff);<br>}</p>
-<p>.custom-audio::-webkit-media-controls-play-button {<br>  color: var(–primary-color, #3498db);<br>}<br></style></p>
+<style>
+  .audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .custom-audio {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-audio::-webkit-media-controls-panel {
+    background-color: #fff;
+  }
+
+  .custom-audio::-webkit-media-controls-play-button {
+    color: #3498db;
+  }
+</style>
+
 <h3 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a><strong>歌词</strong></h3><p><strong>作曲</strong>：Nujabes<br><strong>作词</strong>：Shing02  </p>
 <p>Lovesick like a dog with canine sensitivity<br>相思敏感如犬  </p>
 <p>Developing this new theory of relativity<br>发展出了相对论的新理论  </p>
@@ -1042,7 +1079,7 @@
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>John Doe</div>
+          <div>Karune</div>
         </div>
       
       
@@ -1271,6 +1308,33 @@
 
   
 <script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
+
+
+  
+<script>
   Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
     var toc = jQuery('#toc');
     if (toc.length === 0 || !window.tocbot) { return; }
@@ -1363,6 +1427,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
