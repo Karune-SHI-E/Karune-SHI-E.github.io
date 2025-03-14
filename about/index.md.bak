@@ -1,0 +1,37 @@
+---
+title: 关于我
+date: 2025-03-14
+layout: about
+---
+
+<div class="about-container">
+  <div class="about-intro">
+    <h1>关于博客</h1>
+    <p>一个私人博客。主要分享无损音源</p>
+  </div>
+</div>
+
+## 我的兴趣
+<div class="skills">
+  <ul>
+    <li><i class="iconfont icon-code"></i> 搞机：Termux AM Python</li>
+    <li><i class="iconfont icon-music"></i> 音乐：喜欢收藏Hires音乐</li>
+    <li><i class="iconfont icon-mobile"></i> 目前在玩：鸣潮</li>
+  </ul>
+</div>
+
+## 联系我
+<div class="contact">
+  <a href="mailto:karune-@outlook.com" class="button">邮箱</a>
+  <a href="https://github.com/Karune-SHI-E" class="button">GitHub</a>
+  <a href="https://x.com/Karune520" class="button">X</a>
+</div>
+
+## 我的朋友们
+<div class="friends">
+  <ul>
+    <li><a href="https://friend-a.com">朋友A</a></li>
+    <li><a href="https://friend-b.com">朋友B</a></li>
+    <li><a href="https://friend-c.com">朋友C</a></li>
+  </ul>
+</div>
