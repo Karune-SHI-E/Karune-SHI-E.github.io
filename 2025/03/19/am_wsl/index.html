@@ -21,14 +21,14 @@
   
     <meta name="description" content="发布日期：2024年7月21日最后更新：2025年2月17日  中国大陆用户须知    确保使用稳定的网络环境和有效的代理工具（推荐开启 TUN 模式） 按 Win + R 输入 cmd 打开命令提示符 执行以下命令验证网络状态：1ping google.com 出现连续响应且无丢包（如图示）即为正常    一、环境部署步骤 1：基础安装 下载安装包：AMDL-WSL1 整合包 解压后按顺序执行：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在 WSL1 上运行 Apple Music 下载器完整指南">
+<meta property="og:title" content="在Win上运行 Apple Music 下载器 整合包版">
 <meta property="og:url" content="https://karune-shi-e.github.io/2025/03/19/am_wsl/index.html">
 <meta property="og:site_name" content="Karune">
 <meta property="og:description" content="发布日期：2024年7月21日最后更新：2025年2月17日  中国大陆用户须知    确保使用稳定的网络环境和有效的代理工具（推荐开启 TUN 模式） 按 Win + R 输入 cmd 打开命令提示符 执行以下命令验证网络状态：1ping google.com 出现连续响应且无丢包（如图示）即为正常    一、环境部署步骤 1：基础安装 下载安装包：AMDL-WSL1 整合包 解压后按顺序执行：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://karune-shi-e.github.io/img/Apple-Music.jpg">
 <meta property="article:published_time" content="2025-03-19T13:30:50.000Z">
-<meta property="article:modified_time" content="2025-06-05T13:20:55.055Z">
+<meta property="article:modified_time" content="2025-06-05T13:44:09.267Z">
 <meta property="article:author" content="Karune">
 <meta property="article:tag" content="WSL">
 <meta name="twitter:card" content="summary_large_image">
@@ -38,7 +38,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>在 WSL1 上运行 Apple Music 下载器完整指南 - Karune</title>
+  <title>在Win上运行 Apple Music 下载器 整合包版 - Karune</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,7 +228,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在 WSL1 上运行 Apple Music 下载器完整指南"></span>
+            <span id="subtitle" data-typed-text="在Win上运行 Apple Music 下载器 整合包版"></span>
           
         </div>
 
@@ -251,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          489 字
+          544 字
         
       </span>
     
@@ -308,12 +308,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在 WSL1 上运行 Apple Music 下载器完整指南</h1>
+            <h1 id="seo-header">在Win上运行 Apple Music 下载器 整合包版</h1>
             
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-06-05T21:20:55+08:00
+                    本文最后更新于 2025-06-05T21:44:09+08:00
                   
                   
 
@@ -395,8 +395,14 @@
 <ol>
 <li>获取有效的 <code>media-user-token</code></li>
 <li>确保 token 与下载区域账号匹配</li>
-<li>获取方式：<a target="_blank" rel="noopener" href="https://t.me/apple_music_alac">Apple Music 高级功能指南</a></li>
+<li>打开 <a target="_blank" rel="noopener" href="https://music.apple.com/">Apple Music</a> 并登录</li>
+<li>打开开发者工具，点击“应用程序 -&gt; 存储 -&gt; Cookies -&gt; <a target="_blank" rel="noopener" href="https://music.apple.com”/">https://music.apple.com”</a></li>
+<li>找到名为“media-user-token”的 Cookie 并复制其值</li>
+<li>将步骤 3 中获取的 Cookie 值粘贴到 config.yaml 文件中并保存</li>
 </ol>
+<ul>
+<li>正常启动脚本</li>
+</ul>
 <hr>
 <h2 id="四、支持与交流"><a href="#四、支持与交流" class="headerlink" title="四、支持与交流"></a>四、支持与交流</h2><p>遇到问题？加入社区讨论：<br><a target="_blank" rel="noopener" href="https://t.me/apple_music_alac">Apple Music 技术交流群</a></p>
 
@@ -444,7 +450,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在 WSL1 上运行 Apple Music 下载器完整指南</div>
+      <div>在Win上运行 Apple Music 下载器 整合包版</div>
       <div>https://karune-shi-e.github.io/2025/03/19/am_wsl/</div>
     </div>
     <div class="license-meta">
@@ -499,8 +505,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/13/am/" title="通过 Termux 下载 Apple Music">
-                        <span class="hidden-mobile">通过 Termux 下载 Apple Music</span>
+                      <a href="/2025/03/13/am/" title="通过 Termux运行 Apple Music下载器">
+                        <span class="hidden-mobile">通过 Termux运行 Apple Music下载器</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
