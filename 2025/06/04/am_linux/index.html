@@ -19,16 +19,16 @@
   <meta name="author" content="Karune">
   <meta name="keywords" content="">
   
-    <meta name="description" content="发布日期：2024年7月21日最后更新：2025年2月17日  中国大陆用户须知    确保使用稳定的网络环境和有效的代理工具（推荐开启 TUN 模式） 按 Win + R 输入 cmd 打开命令提示符 执行以下命令验证网络状态：1ping google.com 出现连续响应且无丢包（如图示）即为正常    一、环境部署步骤 1：基础安装 下载安装包：AMDL-WSL1 整合包 解压后按顺序执行：">
+    <meta name="description" content="适用于 WSL 或 Linux 系统，快速部署 Apple Music 下载工具。   一、更新系统并安装依赖1sudo apt update -y &amp;&amp; sudo apt upgrade -y &amp;&amp; sudo apt install -y wget git unzip golang gpac ffmpeg   二、安装 Wrapper1234cd ~wget h">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在 WSL1 上运行 Apple Music 下载器完整指南">
-<meta property="og:url" content="https://karune-shi-e.github.io/2025/03/19/am_wsl/index.html">
+<meta property="og:title" content="更简洁的 Wrapper Linux 指南">
+<meta property="og:url" content="https://karune-shi-e.github.io/2025/06/04/am_linux/index.html">
 <meta property="og:site_name" content="Karune">
-<meta property="og:description" content="发布日期：2024年7月21日最后更新：2025年2月17日  中国大陆用户须知    确保使用稳定的网络环境和有效的代理工具（推荐开启 TUN 模式） 按 Win + R 输入 cmd 打开命令提示符 执行以下命令验证网络状态：1ping google.com 出现连续响应且无丢包（如图示）即为正常    一、环境部署步骤 1：基础安装 下载安装包：AMDL-WSL1 整合包 解压后按顺序执行：">
+<meta property="og:description" content="适用于 WSL 或 Linux 系统，快速部署 Apple Music 下载工具。   一、更新系统并安装依赖1sudo apt update -y &amp;&amp; sudo apt upgrade -y &amp;&amp; sudo apt install -y wget git unzip golang gpac ffmpeg   二、安装 Wrapper1234cd ~wget h">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://karune-shi-e.github.io/img/Apple-Music.jpg">
-<meta property="article:published_time" content="2025-03-19T13:30:50.000Z">
-<meta property="article:modified_time" content="2025-06-05T13:20:55.055Z">
+<meta property="article:published_time" content="2025-06-04T13:30:50.000Z">
+<meta property="article:modified_time" content="2025-06-05T13:19:29.639Z">
 <meta property="article:author" content="Karune">
 <meta property="article:tag" content="WSL">
 <meta name="twitter:card" content="summary_large_image">
@@ -38,7 +38,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>在 WSL1 上运行 Apple Music 下载器完整指南 - Karune</title>
+  <title>更简洁的 Wrapper Linux 指南 - Karune</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,7 +228,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在 WSL1 上运行 Apple Music 下载器完整指南"></span>
+            <span id="subtitle" data-typed-text="更简洁的 Wrapper Linux 指南"></span>
           
         </div>
 
@@ -239,8 +239,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-19 21:30" pubdate>
-          2025年3月19日 晚上
+        <time datetime="2025-06-04 21:30" pubdate>
+          2025年6月4日 晚上
         </time>
       </span>
     
@@ -251,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          489 字
+          279 字
         
       </span>
     
@@ -262,7 +262,7 @@
         
         
         
-          5 分钟
+          3 分钟
         
       </span>
     
@@ -308,12 +308,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在 WSL1 上运行 Apple Music 下载器完整指南</h1>
+            <h1 id="seo-header">更简洁的 Wrapper Linux 指南</h1>
             
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-06-05T21:20:55+08:00
+                    本文最后更新于 2025-06-05T21:19:29+08:00
                   
                   
 
@@ -323,82 +323,61 @@
             
               <div class="markdown-body">
                 
-                <p><strong>发布日期</strong>：2024年7月21日<br><strong>最后更新</strong>：2025年2月17日</p>
-<blockquote>
-<p><strong>中国大陆用户须知</strong>  </p>
-<ol>
-<li>确保使用<strong>稳定的网络环境</strong>和<strong>有效的代理工具</strong>（推荐开启 TUN 模式）</li>
-<li>按 <code>Win + R</code> 输入 <code>cmd</code> 打开命令提示符</li>
-<li>执行以下命令验证网络状态：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ping google.com<br></code></pre></td></tr></table></figure></li>
-<li>出现连续响应且无丢包（如图示）即为正常<br><img src="https://img.picui.cn/free/2025/03/19/67dabc2b253cb.png" srcset="/img/loading.gif" lazyload></li>
-</ol>
+                <blockquote>
+<p>适用于 WSL 或 Linux 系统，快速部署 Apple Music 下载工具。</p>
 </blockquote>
 <hr>
-<h2 id="一、环境部署"><a href="#一、环境部署" class="headerlink" title="一、环境部署"></a>一、环境部署</h2><h3 id="步骤-1：基础安装"><a href="#步骤-1：基础安装" class="headerlink" title="步骤 1：基础安装"></a>步骤 1：基础安装</h3><ol>
-<li>下载安装包：<br><a target="_blank" rel="noopener" href="https://github.com/itouakirai/apple-music-jshook-script/releases/download/wsa/AMDL-WSL1.ALL.IN.ONE.zip">AMDL-WSL1 整合包</a></li>
-<li>解压后按顺序执行：<ul>
-<li><code>0-1-install-dependencies.bat</code> → 如需重启请完成重启</li>
-<li><code>0-2-configure-wsl.bat</code></li>
+<h2 id="一、更新系统并安装依赖"><a href="#一、更新系统并安装依赖" class="headerlink" title="一、更新系统并安装依赖"></a>一、更新系统并安装依赖</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt update -y &amp;&amp; <span class="hljs-built_in">sudo</span> apt upgrade -y &amp;&amp; <span class="hljs-built_in">sudo</span> apt install -y wget git unzip golang gpac ffmpeg<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="二、安装-Wrapper"><a href="#二、安装-Wrapper" class="headerlink" title="二、安装 Wrapper"></a>二、安装 Wrapper</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~<br>wget https://github.com/itouakirai/wrapper/releases/download/Wrapper.x86_64.f907010/Wrapper.x86_64.f907010.zip<br>unzip Wrapper.x86_64.*.zip -d ~/wrapper<br><span class="hljs-built_in">rm</span> Wrapper.x86_64.*.zip<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、下载-AM-项目并编译"><a href="#三、下载-AM-项目并编译" class="headerlink" title="三、下载 AM 项目并编译"></a>三、下载 AM 项目并编译</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~<br>git <span class="hljs-built_in">clone</span> https://github.com/zhaarey/apple-music-downloader am<br><span class="hljs-built_in">cd</span> am<br>go build<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="四、运行-Wrapper（终端-1）"><a href="#四、运行-Wrapper（终端-1）" class="headerlink" title="四、运行 Wrapper（终端 1）"></a>四、运行 Wrapper（终端 1）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/wrapper<br><span class="hljs-built_in">sudo</span> ./wrapper -M 20020 -L email:password<br></code></pre></td></tr></table></figure>
+
+<p>如遇登录问题可尝试：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> ./wrapper -M 20020 -L <span class="hljs-string">&quot;email&quot;</span>:<span class="hljs-string">&quot;password&quot;</span><br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="五、运行-AM-下载器（终端-2）"><a href="#五、运行-AM-下载器（终端-2）" class="headerlink" title="五、运行 AM 下载器（终端 2）"></a>五、运行 AM 下载器（终端 2）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/am<br>./main [专辑链接]<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="附加说明"><a href="#附加说明" class="headerlink" title="附加说明"></a>附加说明</h2><ul>
+<li><strong>2FA 登录问题</strong>：需手动解决。</li>
+<li><strong>歌词下载</strong>：需设置 <code>media-user-token</code>（可用 EditThisCookie 插件或 F12 控制台获取）。</li>
+<li><strong>避免使用共享账号</strong>：否则可能影响下载或播放。</li>
+<li><strong>WSL虚拟盘过大</strong>：<a target="_blank" rel="noopener" href="https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/">瘦身指南</a></li>
+<li><strong>适用于其他平台</strong>：<ul>
+<li><a target="_blank" rel="noopener" href="https://rentry.co/zhaareywrapper">Windows 设置 WSL</a></li>
+<li><a target="_blank" rel="noopener" href="https://applemusic.mintlify.app/guide/macos">macOS 指南</a></li>
+<li><a target="_blank" rel="noopener" href="https://rentry.org/donut-AM-alpine-method">Android 用户</a></li>
 </ul>
 </li>
-</ol>
+</ul>
 <hr>
-<h2 id="二、下载流程"><a href="#二、下载流程" class="headerlink" title="二、下载流程"></a>二、下载流程</h2><h3 id="步骤-1：配置解密器"><a href="#步骤-1：配置解密器" class="headerlink" title="步骤 1：配置解密器"></a>步骤 1：配置解密器</h3><ol>
-<li>用文本编辑器打开 <code>1-start-wrapper.bat</code></li>
-<li>修改以下字段：<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">set</span> username=你的AppleID  # 中国大陆手机号前加<span class="hljs-number">86</span>（如<span class="hljs-number">8613812345678</span>）<br><span class="hljs-built_in">set</span> password=你的密码    # 避免使用特殊字符<br></code></pre></td></tr></table></figure></li>
-<li>保存后运行此批处理文件</li>
-</ol>
-<h3 id="步骤-2：登录验证"><a href="#步骤-2：登录验证" class="headerlink" title="步骤 2：登录验证"></a>步骤 2：登录验证</h3><ul>
-<li>✅ <strong>成功标志</strong>：出现 <code>type6</code> 提示和登录信息<br><img src="https://img.picui.cn/free/2025/03/19/67dabc99c3081.jpg" srcset="/img/loading.gif" lazyload></li>
-<li>❌ <strong>失败处理</strong>：<ul>
-<li>出现 <code>_bionic_open_tzdata_path</code>：检查网络连接</li>
-<li>需要二次验证：在窗口输入验证码</li>
+<h2 id="常见错误说明"><a href="#常见错误说明" class="headerlink" title="常见错误说明"></a>常见错误说明</h2><ul>
+<li><strong>Error code: 0</strong>：歌曲不存在。</li>
+<li><strong>Error Decrypt</strong>：<ul>
+<li>未运行 Wrapper。</li>
+<li>下载频率过高，重启或休息后再试。</li>
+<li>共享账号被占用。</li>
 </ul>
 </li>
-<li>➡️ <strong>保持此窗口开启状态</strong></li>
+<li><strong>Failed to extract info from manifest: no codec found</strong>：<ul>
+<li><p>专辑不支持 Dolby Atmos。</p>
+</li>
+<li><p>无对应音频质量，使用 <code>--debug</code> 查看可选质量：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">./main --debug [url]<br></code></pre></td></tr></table></figure></li>
 </ul>
-<h3 id="步骤-3：执行下载"><a href="#步骤-3：执行下载" class="headerlink" title="步骤 3：执行下载"></a>步骤 3：执行下载</h3><ol>
-<li>运行 <code>2-start-downloader.bat</code> 开启新终端</li>
-<li>根据需求选择命令：</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>下载类型</th>
-<th>命令格式</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>整张专辑&#x2F;歌单</td>
-<td><code>go run main.go [URL]</code></td>
-<td><code>go run main.go https://music.apple.com/cn/album/...</code></td>
-</tr>
-<tr>
-<td>杜比全景声专辑</td>
-<td><code>go run main.go --atmos [URL]</code></td>
-<td><code>go run main.go --atmos https://...</code></td>
-</tr>
-<tr>
-<td>选择性下载曲目</td>
-<td><code>go run main.go --select [URL]</code></td>
-<td>输入 <code>1-3,5,6</code> 选择曲目</td>
-</tr>
-</tbody></table>
-<p><img src="https://img.picui.cn/free/2025/03/19/67dac0d809844.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
 <hr>
-<h2 id="三、高级配置"><a href="#三、高级配置" class="headerlink" title="三、高级配置"></a>三、高级配置</h2><h3 id="修改存储路径"><a href="#修改存储路径" class="headerlink" title="修改存储路径"></a>修改存储路径</h3><ol>
-<li>运行 <code>Edit-config.bat</code> 编辑配置文件</li>
-<li>修改路径映射示例：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Windows路径 → WSL路径转换</span><br><span class="hljs-attr">alac-save-folder:</span> <span class="hljs-string">E:/AM-DL</span>    <span class="hljs-string">→</span> <span class="hljs-string">/mnt/e/AM-DL</span><br><span class="hljs-attr">atmos-save-folder:</span> <span class="hljs-string">D:/Music/AM</span> <span class="hljs-string">→</span> <span class="hljs-string">/mnt/d/Music/AM</span><br></code></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="获取高级功能权限"><a href="#获取高级功能权限" class="headerlink" title="获取高级功能权限"></a>获取高级功能权限</h3><p>要解锁<strong>歌词&#x2F;AAC-LC&#x2F;MV下载</strong>功能：</p>
-<ol>
-<li>获取有效的 <code>media-user-token</code></li>
-<li>确保 token 与下载区域账号匹配</li>
-<li>获取方式：<a target="_blank" rel="noopener" href="https://t.me/apple_music_alac">Apple Music 高级功能指南</a></li>
-</ol>
-<hr>
-<h2 id="四、支持与交流"><a href="#四、支持与交流" class="headerlink" title="四、支持与交流"></a>四、支持与交流</h2><p>遇到问题？加入社区讨论：<br><a target="_blank" rel="noopener" href="https://t.me/apple_music_alac">Apple Music 技术交流群</a></p>
+<h2 id="原始资源"><a href="#原始资源" class="headerlink" title="原始资源"></a>原始资源</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://rentry.org/wrapper-full-setup-build">完整构建指南</a></li>
+</ul>
 
                 
               </div>
@@ -444,8 +423,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在 WSL1 上运行 Apple Music 下载器完整指南</div>
-      <div>https://karune-shi-e.github.io/2025/03/19/am_wsl/</div>
+      <div>更简洁的 Wrapper Linux 指南</div>
+      <div>https://karune-shi-e.github.io/2025/06/04/am_linux/</div>
     </div>
     <div class="license-meta">
       
@@ -457,7 +436,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月19日</div>
+          <div>2025年6月4日</div>
         </div>
       
       
@@ -489,18 +468,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/04/am_linux/" title="更简洁的 Wrapper Linux 指南">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">更简洁的 Wrapper Linux 指南</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/13/am/" title="通过 Termux 下载 Apple Music">
-                        <span class="hidden-mobile">通过 Termux 下载 Apple Music</span>
+                      <a href="/2025/03/19/am_wsl/" title="在 WSL1 上运行 Apple Music 下载器完整指南">
+                        <span class="hidden-mobile">在 WSL1 上运行 Apple Music 下载器完整指南</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
